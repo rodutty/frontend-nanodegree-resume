@@ -58,7 +58,7 @@ var projects = {
         {
             "title": "Reimagining CLFI Management",
             "dates": "Spring 2015",
-            "description": "Our application process was screwy, and needed to be fixed! We had a huge pot of money to spend, and were waiting for endless approvals before even beginning to plan how to spend it. The revised process envisioned an ongoing application process that would feed a hopper of projects. These projects would be validated by our selection committee well in advance of us receiving funds from HQ. In this manner, we would be in a position to respond quickly once we receive funds.",
+            "description": "Our application process was cumbersome for recipients and needed to be made lighter! The revised process envisioned an ongoing application process that would feed a hopper of projects. These projects would be validated by our selection committee well in advance of us receiving funds from HQ. In this manner, we would be in a position to respond quickly once we received funds.",
             "images": [
                 "images/cfli.jpg"
             ]
@@ -145,6 +145,14 @@ $('#header').append(formattedWelcomeMsg);
 $('#header').prepend(formattedRole);
 $('#header').prepend(formattedName);
 
+var formattedMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
+var formattedEmail = HTMLemail.replace('%data%', bio.contacts.email);
+var formattedGitHub = HTMLgithub.replace('%data%', bio.contacts.github);
+var formattedLocation = HTMLlocation.replace ('%data%', bio.contacts.location);
+$('#footerContacts').append(formattedMobile);
+$('#footerContacts').append(formattedEmail);
+$('#footerContacts').append(formattedGitHub);
+$('#footerContacts').append(formattedLocation);
 
 if (bio.skills) {
     $('#header').append(HTMLskillsStart)
