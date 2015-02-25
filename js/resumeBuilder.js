@@ -110,7 +110,22 @@ var projects = {
                 "images/cfli.jpg"
             ],
             "url": "http://www.canadainternational.gc.ca/india-inde/bilateral_relations_bilaterales/CFLI-India-Inde-FCIL.aspx?lang=eng"
+        },
+        {
+            "title": "Front-End Webdeveloper Nano-Degree - Project 1",
+            "dates": "Winter 2015",
+            "description" : "This was my first project in my Nano-Degree, in which I created a simple web page from a pdf mockup.",
+            "images": ["images/p1.jpg"],
+            "url" : "http://rodutty.github.io/p1-mockup-to-website/"
+        },
+        {  
+            "title": "Front-End Webdeveloper Nano-Degree - Project 2",
+            "dates": "Winter 2015",
+            "description" : "This was my second project in my Nano-Degree...this online resume!",
+            "images": ["images/p2.jpg"],
+            "url" : "http://rodutty.github.io/frontend-nanodegree-resume/"
         }
+
     ],
     
     'display' : function() {
